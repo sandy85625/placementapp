@@ -12,8 +12,7 @@ import projectSkillRoute from "./controllers/projectSkill.js";
 import workExperienceRoute from "./controllers/workExperience.js";
 import studentSkillRoute from "./controllers/studentSkills.js";
 import internshipRoute from "./controllers/internship.js";
-
-
+import recommendRoute from "./controllers/recommendation.js";
 
 const app = express();
 
@@ -36,6 +35,7 @@ app.use("/student_skill",studentSkillRoute);
 app.use("/skills",skillRoute);
 app.use("/work_experience",workExperienceRoute);
 app.use("/internship",internshipRoute);
+app.use("/recommend",recommendRoute);
 
 
 app.listen(port, () => {
