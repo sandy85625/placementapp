@@ -13,6 +13,7 @@ import workExperienceRoute from "./controllers/workExperience.js";
 import studentSkillRoute from "./controllers/studentSkills.js";
 import internshipRoute from "./controllers/internship.js";
 import recommendRoute from "./controllers/recommendation.js";
+import notificationRoute from "./controllers/send-email.js";
 
 const app = express();
 
@@ -36,6 +37,7 @@ app.use("/skills",skillRoute);
 app.use("/work_experience",workExperienceRoute);
 app.use("/internship",internshipRoute);
 app.use("/recommend",recommendRoute);
+app.use("/notification",notificationRoute);
 
 
 app.listen(port, () => {
